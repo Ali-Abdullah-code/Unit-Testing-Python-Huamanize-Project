@@ -1,6 +1,4 @@
 """
-conftest.py
-===========
 Shared pytest fixtures and suite configuration for the Humanize test suite.
 Provides:
     - Common fixtures (fixed datetime, fixed date)
@@ -67,16 +65,23 @@ def large_number(request):
 
 def pytest_configure(config):
     """Register custom markers to prevent PytestUnknownMarkWarning."""
-    config.addinivalue_line("markers", "number: Tests for humanize.number module")
-    config.addinivalue_line("markers", "filesize: Tests for humanize.filesize module")
-    config.addinivalue_line("markers", "duration: Tests for humanize.duration module")
+    config.addinivalue_line(
+        "markers", "number: Tests for humanize.number module")
+    config.addinivalue_line(
+        "markers", "filesize: Tests for humanize.filesize module")
+    config.addinivalue_line(
+        "markers", "duration: Tests for humanize.duration module")
     config.addinivalue_line("markers", "time: Tests for humanize.time module")
     config.addinivalue_line("markers", "i18n: Tests for humanize.i18n module")
-    config.addinivalue_line("markers", "lists: Tests for humanize.lists module")
+    config.addinivalue_line(
+        "markers", "lists: Tests for humanize.lists module")
     config.addinivalue_line("markers", "smoke: Quick sanity smoke tests")
-    config.addinivalue_line("markers", "regression: Regression tests for known edge-cases")
-    config.addinivalue_line("markers", "parametrize: Data-driven parametrized test cases")
-    config.addinivalue_line("markers", "csv_driven: Tests consuming data from external CSV files")
+    config.addinivalue_line(
+        "markers", "regression: Regression tests for known edge-cases")
+    config.addinivalue_line(
+        "markers", "parametrize: Data-driven parametrized test cases")
+    config.addinivalue_line(
+        "markers", "csv_driven: Tests consuming data from external CSV files")
 
 
 def pytest_collection_modifyitems(config, items):
@@ -93,7 +98,8 @@ def pytest_collection_modifyitems(config, items):
         8. csv_driven tests
     Within each group, @pytest.mark.order(N) controls fine-grained order.
     """
-    SUITE_ORDER = ["smoke", "number", "filesize", "duration", "time", "i18n", "lists", "csv_driven"]
+    SUITE_ORDER = ["smoke", "number", "filesize",
+                   "duration", "time", "i18n", "lists", "csv_driven"]
 
     def suite_priority(item):
         for idx, marker_name in enumerate(SUITE_ORDER):
