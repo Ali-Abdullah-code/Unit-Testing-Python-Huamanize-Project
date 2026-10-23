@@ -198,15 +198,15 @@ python generate_excel.py
 
 ---
 
-## Expected Test Count
+## Exact Automated Test Count Breakdown
 
-| Module       | Test Classes | Approx Tests |
-|--------------|-------------|-------------|
-| number       | 6 classes   | ~45 tests   |
-| filesize     | 4 classes   | ~25 tests   |
-| duration     | 3 classes   | ~20 tests   |
-| time         | 4 classes   | ~30 tests   |
-| i18n         | 3 classes   | ~18 tests   |
-| lists        | 3 classes   | ~18 tests   |
-| csv_driven   | 4 classes   | ~34 tests   |
-| **Total**    | **27**      | **~190**    |
+| Module | Test File | Test Classes | Test Cases | Author |
+| --- | --- | --- | --- | --- |
+| `number` | `tests/test_number.py` | 5 classes | 62 tests | 24F-3109 |
+| `filesize` | `tests/test_filesize.py` | 4 classes | 29 tests | 24F-3109 |
+| `duration` | `tests/test_duration.py` | 3 classes | 21 tests | 24F-3109 |
+| `time` | `tests/test_time.py` | 4 classes | 39 tests | 24P-3060 |
+| `i18n` | `tests/test_i18n.py` | 3 classes | 16 tests | 24P-3060 |
+| `lists` | `tests/test_lists.py` | 3 classes | 21 tests | 24P-3060 |
+| `csv_driven` | `tests/test_csv_driven.py` | 4 classes | 34 tests | Both |
+| **Total** | **All 7 Test Files** | **26 Classes** | **222 Tests** | **100% Passing** |
