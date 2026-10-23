@@ -1,0 +1,7 @@
+list_items,expected_output
+apple,apple
+apple|banana,apple and banana
+cat|dog,cat and dog
+red|blue,red and blue
+one|two,one and two
+hello|world,hello and world
