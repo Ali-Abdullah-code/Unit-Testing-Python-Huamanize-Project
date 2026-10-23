@@ -5,7 +5,7 @@
 
 ## Module 1: `humanize.number` (Member 1)
 
-### Functions: `intcomma`, `intword`, `ordinal`, `apnumber`, `metric`, `clamp`
+### Functions: `intcomma`, `intword`, `ordinal`, `apnumber`, `metric`
 
 ---
 
@@ -106,22 +106,6 @@
 | giga    | 1,000,000,000 | "G"    |
 | milli   | 0.001       | "m"      |
 | base    | 1-999       | no prefix |
-
----
-
-### `clamp(value, min, max, format)`
-
-**Purpose:** Restrict a value to [min, max] range.
-
-#### ECP / BVA
-
-| Class        | Input               | Expected |
-|--------------|---------------------|----------|
-| Inside range | clamp(50, 0, 100)   | 50       |
-| At minimum   | clamp(0, 0, 100)    | 0        |
-| At maximum   | clamp(100, 0, 100)  | 100      |
-| Below min    | clamp(-10, 0, 100)  | 0        |
-| Above max    | clamp(150, 0, 100)  | 100      |
 
 ---
 
