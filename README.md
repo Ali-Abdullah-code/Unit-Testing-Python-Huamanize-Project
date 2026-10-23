@@ -190,11 +190,6 @@ Four CSV files in `tests/data/` provide external test data:
 | `ordinal_data.csv`       | ordinal             | 10   |
 | `natural_list_data.csv`  | natural_list        | 6    |
 
-### Generate Excel Documentation
-
-```bash
-python generate_excel.py
-```
 
 ---
 
