@@ -4,6 +4,10 @@
 
 ### Open-Source Project: [humanize](https://github.com/python-humanize/humanize)
 
+## Project Demonstration Video
+
+[▶ Watch Project Demo](https://drive.google.com/file/d/1qcTm5OpI9fKY7iNY3gOnNjbRwV-5809F/view?usp=sharing)
+
 > **humanize** converts Python data into human-readable text — numbers, file sizes, dates, time deltas, and lists.
 
 ---
