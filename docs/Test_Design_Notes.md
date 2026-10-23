@@ -3,7 +3,7 @@
 
 ---
 
-## Module 1: `humanize.number` (Member 1)
+## Module 1: `humanize.number` (24F-3109)
 
 ### Functions: `intcomma`, `intword`, `ordinal`, `apnumber`, `metric`
 
@@ -109,7 +109,7 @@
 
 ---
 
-## Module 2: `humanize.filesize` (Member 1)
+## Module 2: `humanize.filesize` (24F-3109)
 
 ### Function: `naturalsize(value, binary, gnu, format)`
 
@@ -137,7 +137,7 @@
 
 ---
 
-## Module 3: `humanize.time (precisedelta)` (Member 1)
+## Module 3: `humanize.time (precisedelta)` (24F-3109)
 
 ### Function: `precisedelta(value, minimum_unit, suppress)`
 
@@ -167,7 +167,7 @@
 
 ---
 
-## Module 4: `humanize.time` (Member 2)
+## Module 4: `humanize.time` (24P-3060)
 
 ### Functions: `naturaltime`, `naturalday`, `naturaldelta`, `naturaldate`
 
@@ -192,7 +192,7 @@
 
 ---
 
-## Module 5: `humanize.i18n` (Member 2)
+## Module 5: `humanize.i18n` (24P-3060)
 
 ### Functions: `activate`, `deactivate`, `decimal_separator`, `thousands_separator`
 
@@ -207,7 +207,7 @@
 
 ---
 
-## Module 6: `humanize.lists` (Member 2)
+## Module 6: `humanize.lists` (24P-3060)
 
 ### Function: `natural_list(lst, conjunction)`
 
